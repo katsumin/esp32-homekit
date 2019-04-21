@@ -19,7 +19,7 @@ Please install PlatformIO Extension on VSCode
 # Download
 
 ```
-$ git clone  https://github.com/younghyunjo/esp32-homekit.git
+$ git clone https://github.com/katsumin/esp32-homekit.git
 $ cd esp32-homekit
 $ git submodule update --init --recursive
 ```
