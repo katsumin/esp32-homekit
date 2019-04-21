@@ -3,26 +3,20 @@
 This project is impemented Apple Homekit Accessory Protocol(HAP) to ESP32.\
 You can make your own Homekit accessory with ESP32 with this project.
 
-
-
-
 # Demo
+
 [![ESP32 HOMEKIT](https://img.youtube.com/vi/OTBtEQNa-1E/0.jpg)](https://www.youtube.com/watch?v=OTBtEQNa-1E "ESP32 HOMEKIT")
 
 # Resource
+
 - [Apple Homekit Accessory Protocol](https://developer.apple.com/support/homekit-accessory-protocol/)
 - [Mongoose](https://github.com/cesanta/mongoose)
 
 # Prerequisite
-The `esp32-homekit` is using esp-idf libraries and build.\
-Please install ESP-IDF
-- ESP-IDF Setup Guide
-  * [Windows Setup Guide](https://docs.espressif.com/projects/esp-idf/en/latest/get-started/windows-setup.html)
-  * [Mac OS Setup Guide](https://docs.espressif.com/projects/esp-idf/en/latest/get-started/macos-setup.html)
-  * [Linux Setup Guide](https://docs.espressif.com/projects/esp-idf/en/latest/get-started/linux-setup.html)
+
+Please install PlatformIO Extension on VSCode
 
 # Download
-
 
 ```
 $ git clone  https://github.com/younghyunjo/esp32-homekit.git
@@ -31,7 +25,9 @@ $ git submodule update --init --recursive
 ```
 
 # Configuration
+
 ## WiFi
+
 esp32-homekit uses WiFi as tranmission layer.\
 To connection WiFi, you MUST config WiFi ssid and password.
 
@@ -40,20 +36,40 @@ To connection WiFi, you MUST config WiFi ssid and password.
 
 ```
 #define EXAMPLE_ESP_WIFI_SSID "unibj"
-#define EXAMPLE_ESP_WIFI_SSID "12345678"  
+#define EXAMPLE_ESP_WIFI_SSID "12345678"
+```
+
+3.  copy wolfssl sources
+
+- Linux/MacOS
+
+```
+$ ./wolfssl_copy.sh
+```
+
+- Windows
+
+```
+$ ./wolfssl_copy.bat
 ```
 
 # Build
 
 ```
-$ cd examples/switch
-$ make
-$ make flash
+$ platformio run
 ```
 
 # Setup Code
+
 While pairing accessory and iOS devices, You must enter Setup Code at HOME App.
-The default setupt code is 
+The default setupt code is
+
 ## **`053-58-917`**
 
+```
 
+```
+
+```
+
+```
