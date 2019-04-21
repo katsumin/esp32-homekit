@@ -39,7 +39,7 @@ To connection WiFi, you MUST config WiFi ssid and password.
 #define EXAMPLE_ESP_WIFI_SSID "12345678"
 ```
 
-3.  copy wolfssl sources
+## Copy Sources
 
 - Linux/MacOS
 
