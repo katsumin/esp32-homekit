@@ -165,7 +165,14 @@ void wifi_init_sta()
 
 void app_main()
 {
-    ESP_ERROR_CHECK( nvs_flash_init() );
+    esp_err_t init = nvs_flash_init();
+    while (init != ESP_OK)
+    {
+        init = nvs_flash_erase();
+        ESP_LOGI(TAG, "nvs_flash_erase:%d", init);
+        init = nvs_flash_init();
+        ESP_LOGI(TAG, "nvs_flash_init:%d", init);
+    }
 
     gpio_pad_select_gpio(LED_PORT);
     gpio_set_direction(LED_PORT, GPIO_MODE_OUTPUT);
