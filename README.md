@@ -5,7 +5,13 @@ You can make your own Homekit accessory with ESP32 with this project.
 
 # Demo
 
-[![ESP32 HOMEKIT](https://img.youtube.com/vi/OTBtEQNa-1E/0.jpg)](https://www.youtube.com/watch?v=OTBtEQNa-1E "ESP32 HOMEKIT")
+- オリジナル
+
+  [![ESP32 HOMEKIT](https://img.youtube.com/vi/OTBtEQNa-1E/0.jpg)](https://www.youtube.com/watch?v=OTBtEQNa-1E "ESP32 HOMEKIT")
+
+- hue っぽいサンプル
+
+  [![ESP32 HOMEKIT HUE](https://img.youtube.com/vi/xpekmt9iO3U/0.jpg)](https://www.youtube.com/watch?v=xpekmt9iO3U)
 
 # Resource
 
