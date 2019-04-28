@@ -54,4 +54,5 @@ dkms.conf
 .DS_Store
 .pioenvs
 .vscode
+.piolibdeps
 src/wolfssl
